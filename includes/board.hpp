@@ -17,6 +17,11 @@ void DropDiskToBoard(Board& b, DiskType disk, int col);
 bool CheckForWinner(Board& b, DiskType disk);
 bool SearchForWinner(Board& b, DiskType disk, WinningDirection to_check);
 bool BoardLocationInBounds(int row, int col);
+bool CheckHorizontal(Board& b, DiskType disk);
+bool CheckVertical(Board& b, DiskType disk);
+bool CheckRightDiag(Board& b, DiskType disk);
+bool CheckLeftDiag(Board& b, DiskType disk);
+
 
 // provided
 std::string BoardToStr(const Board& b);
